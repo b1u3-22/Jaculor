@@ -24,7 +24,7 @@ function refreshPage() {
 class Scene extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {charges: player_functional.charges, dashes: player_functional.dashes, score: actual_score, style_gameover: {display: 'none'}, style_form: {display: 'block'}};
+    this.state = {charges: player_functional.charges, dashes: player_functional.dashes, score: actual_score, style_gameover: {display: 'none'}, style_form: {display: 'block'}, gameover_text: "Your score is: "};
   }
 
   getRandomInt(max) {
@@ -170,6 +170,11 @@ class Scene extends React.Component {
       
       if (player_dummy.position.y > height){
         Composite.remove(engine.world, player_dummy)
+
+        if (this.Form.state.nickname != ""){
+          this.setState({gameover_text: this.Form.state.nickname + ", your score is:"})
+        }
+
         this.setState({style_gameover: {display: 'block'}})
         }
 
@@ -188,7 +193,7 @@ class Scene extends React.Component {
         <div ref="scene" className = "Scene" />
         <div className = "OverlayWrapper" style = {this.state.style_gameover}>
           <h1 className = "Title">Gameover</h1>
-          <p className = "Label">Your score is: </p>
+          <p className = "Label">{this.state.gameover_text}</p>
           <p className = "Score">{this.state.score}</p>
           <p className = "Button" onClick={refreshPage}>Try again</p>
         </div>
