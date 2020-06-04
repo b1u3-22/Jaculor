@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body {
+    background-color: #18181D;
+    overflow: hidden;
+
+    .OverlayWrapper {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(46, 43, 68, 0.50);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        font-family: 'Audiowide', cursive;
+        transition: all ease-in-out;
+        font-size: 120px;
+        color: #4B7C93;
+        padding: 10px 20px 10px 20px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: all 500ms ease-in-out;
+
+        .Title {
+            text-align: center;
+            color: #4B7C93;
+            font-family: 'Audiowide', cursive;
+            font-size: 200px;
+            padding: 0;
+            margin: 0 0 150px 0;
+        }
+
+        .Label {
+            text-align: center;
+            color: #4B7C93;
+            font-family: 'Audiowide', cursive;
+            font-size: 85px;
+            padding: 0;
+            margin: 30px 0 0 0;
+        }
+
+        .Score {
+            text-align: center;
+            color: #4B7C93;
+            font-family: 'Audiowide', cursive;
+            font-size: 250px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .Button {
+            text-align: center;
+            color: #4B7C93;
+            font-family: 'Audiowide', cursive;
+            font-size: 60px;
+            width: fit-content;
+            padding: 5px 10px 5px 10px;
+            margin: 0;
+            border: solid #4B7C93 2px;
+            margin: -20px auto 0 auto;
+            border-radius: 20px;
+            transition: all 500ms ease-in-out;
+
+            &:hover {
+                background-color: #4B7C93;
+                color: #18181D;
+                border-color: #18181D;
+            }
+        }
+    }
+
+    .TrayWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: solid 5px #2E2B44;
+
+
+        .Tray {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            color: #4B7C93;
+            background-color: #2E2B44;
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 5px;
+            border: solid 3px #4B7C93;
+
+            .TextWrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .Number {
+                    margin: 0%;
+                    padding: 0%;
+                    font-size: 40px;
+                    font-family: 'Audiowide', cursive;
+                }
+
+                .Explanation {
+                    margin: 0%;
+                    padding: 0 0 7px 0;
+                    font-family: 'Audiowide', cursive;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

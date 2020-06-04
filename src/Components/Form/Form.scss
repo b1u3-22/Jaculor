@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+form {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    background: transparent;
+    border: 5px solid #4B7C93;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px 0 10px 0;
+    margin: 250px auto 0 auto;
+
+    input {
+        display: block;
+        background: transparent;
+        border-radius: 10px;
+        border: solid #4B7C93 2px;
+        color: #4B7C93;
+        font-family: 'Audiowide', cursive;
+        font-size: 20px;
+        width: 85%;
+        text-align: center;
+    }
+
+    label {
+        font-family: 'Audiowide', cursive;
+        font-size: 40px;
+        color: #4B7C93;
+    }
+
+    .Button {
+        margin-top: 15px !important;
+        font-size: 40px !important;
+    }
+}

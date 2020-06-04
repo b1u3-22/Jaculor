@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.RotatorySelectorWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        color: #4B7C93;
+        font-family: 'Audiowide', cursive;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .Options {
+        font-family: 'Audiowide', cursive;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        background: #4B7C93;
+        color: #18181D;
+        margin: 0 auto 0 auto;
+        width: 200px;
+        font-size: 20px;
+
+        .Text {
+            font-family: 'Audiowide', cursive;
+            font-size: 20px;
+            color: #18181D;
+        }
+
+        .Arrow {
+
+            &::selection {
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+    }
+}
