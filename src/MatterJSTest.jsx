@@ -181,6 +181,11 @@ class Scene extends React.Component {
       for (let i = 0; i < barriers.length; i++){
         if (Query.collides(player_dummy, barriers[i]).length !== 0){
           Composite.remove(engine.world, player_dummy)
+
+          if (this.Form.state.nickname != ""){
+            this.setState({gameover_text: this.Form.state.nickname + ", your score is:"})
+          }
+          
           this.setState({style_gameover: {display: 'block'}})
           }
         }
