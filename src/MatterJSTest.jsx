@@ -62,14 +62,53 @@ class Scene extends React.Component {
     });
 
     let generateLevel = function(dif_plat, dif_barr) {
-      let y = width / (dif_plat + 1) 
+
+      switch(this.Form.state.option0){
+        case 0:
+          let y = width / 5;
+          break;
+        case 1: 
+          let y = width / 4;
+          break;
+
+        case 2: 
+          let y = width / 3;
+          break;
+
+        case 3:
+          let y = width / 2;
+          break;
+
+        defult: 
+          let y = width / 4;
+          break
+      }
+
       for (let i = 0; i <= width; i += y){
         platforms.unshift(new Platform(i, this.getRandomInt(height), this.getRandomInt(6)))
-
         World.add(engine.world, platforms[0])
       }
 
-      y = width / (dif_barr + 1)
+      switch(this.Form.state.option1){
+        case 3:
+          let y = width / 5;
+          break;
+        case 2: 
+          let y = width / 4;
+          break;
+
+        case 1: 
+          let y = width / 3;
+          break;
+
+        case 0:
+          let y = width / 2;
+          break;
+
+        defult: 
+          let y = width / 4;
+          break
+      }
 
       for (let i = 200; i <= width -200; i += y){
         barriers.unshift(new Barrier(i, this.getRandomInt(height), this.getRandomInt(3)))

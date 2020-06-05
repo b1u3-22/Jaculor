@@ -26,7 +26,7 @@ class Form extends React.Component{
                     Your Nickname
                 </label>
                 <input type = "Text" id = "Nickname" value = {this.state.nickname} onChange = {this.HandleNicknameChange}/>
-                <RotatorySelector ref = {(RotatorySelector_0) => {this.RotatorySelector_0 = RotatorySelector_0}} options = {["Masochistic", "Hard", "Normal", "Easy"]} title = {"Level of platforms"}/>
+                <RotatorySelector ref = {(RotatorySelector_0) => {this.RotatorySelector_0 = RotatorySelector_0}} options = {["Easy", "Normal", "Hard", "Masochistic"]} title = {"Level of platforms"}/>
                 <RotatorySelector ref = {(RotatorySelector_1) => {this.RotatorySelector_1 = RotatorySelector_1}} options = {["Easy", "Normal", "Hard", "Masochistic"]} title = {"Level of barriers"}/>
                 <div className="Button" onClick = {this.ColectData}>Submit</div>
             </form>
