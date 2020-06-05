@@ -30,12 +30,7 @@ class RotatorySelector extends React.Component{
     }
 
     ArrowOneFunction() {
-        if (this.state.selected <= 3){
-            this.setState({selected: this.state.selected + 1});
-        }else{
-            this.setState({selected: 0})
-        }
-
+        this.setState({selected: this.state.selected + 1});
         this.selectOption();
     }
 
