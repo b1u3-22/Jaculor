@@ -66,24 +66,24 @@ class Scene extends React.Component {
       let y;
 
       switch(this.Form.state.option0){
-        case 0:
+        case "Easy":
           y = width / 5;
           break;
-        case 1: 
+        case "Normal": 
           y = width / 4;
           break;
 
-        case 2: 
+        case "Hard": 
           y = width / 3;
           break;
 
-        case 3:
+        case "Masochistic":
           y = width / 2;
           break;
 
-        defult: 
+        defult: //In case something goes wrong
           y = width / 4;
-          break
+          break;
       }
 
       for (let i = 0; i <= width; i += y){
@@ -92,24 +92,24 @@ class Scene extends React.Component {
       }
 
       switch(this.Form.state.option1){
-        case 3:
+        case "Masochistic":
           y = width / 5;
           break;
-        case 2: 
+        case "Hard": 
           y = width / 4;
           break;
 
-        case 1: 
+        case "Normal": 
           y = width / 3;
           break;
 
-        case 0:
+        case "Easy":
           y = width / 2;
           break;
 
-        defult: 
+        defult: //In case something goes wrong
           y = width / 4;
-          break
+          break;
       }
 
       for (let i = 200; i <= width -200; i += y){

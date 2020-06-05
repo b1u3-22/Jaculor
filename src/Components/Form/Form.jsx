@@ -6,13 +6,13 @@ class Form extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {clicked: false, nickname: "", option0: 3, option1: 2}
+        this.state = {clicked: false, nickname: "", option0: "", option1: ""}
         this.ColectData = this.ColectData.bind(this);
         this.HandleNicknameChange = this.HandleNicknameChange.bind(this);
       }
 
     ColectData(){
-        this.setState({clicked: true, option0: this.RotatorySelector_0.state.selected, option1: this.RotatorySelector_1.state.selected})
+        this.setState({clicked: true, option0: this.RotatorySelector_0.state.text, option1: this.RotatorySelector_1.state.text})
     }
 
     HandleNicknameChange(e){
