@@ -63,24 +63,26 @@ class Scene extends React.Component {
 
     let generateLevel = function(dif_plat, dif_barr) {
 
+      let y;
+
       switch(this.Form.state.option0){
         case 0:
-          let y = width / 5;
+          y = width / 5;
           break;
         case 1: 
-          let y = width / 4;
+          y = width / 4;
           break;
 
         case 2: 
-          let y = width / 3;
+          y = width / 3;
           break;
 
         case 3:
-          let y = width / 2;
+          y = width / 2;
           break;
 
         defult: 
-          let y = width / 4;
+          y = width / 4;
           break
       }
 
@@ -91,22 +93,22 @@ class Scene extends React.Component {
 
       switch(this.Form.state.option1){
         case 3:
-          let y = width / 5;
+          y = width / 5;
           break;
         case 2: 
-          let y = width / 4;
+          y = width / 4;
           break;
 
         case 1: 
-          let y = width / 3;
+          y = width / 3;
           break;
 
         case 0:
-          let y = width / 2;
+          y = width / 2;
           break;
 
         defult: 
-          let y = width / 4;
+          y = width / 4;
           break
       }
 
