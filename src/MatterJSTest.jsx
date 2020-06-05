@@ -93,8 +93,9 @@ class Scene extends React.Component {
 
       switch(this.Form.state.option1){
         case "Masochistic":
-          y = width / 5;
+          y = width / 6;
           break;
+          
         case "Hard": 
           y = width / 4;
           break;
