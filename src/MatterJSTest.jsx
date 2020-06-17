@@ -81,7 +81,7 @@ class Scene extends React.Component {
           y = width / 2;
           break;
 
-        defult: //In case something goes wrong
+        default: //In case something goes wrong
           y = width / 4;
           break;
       }
@@ -95,7 +95,7 @@ class Scene extends React.Component {
         case "Masochistic":
           y = width / 6;
           break;
-          
+
         case "Hard": 
           y = width / 4;
           break;
@@ -108,7 +108,7 @@ class Scene extends React.Component {
           y = width / 2;
           break;
 
-        defult: //In case something goes wrong
+        default: //In case something goes wrong
           y = width / 4;
           break;
       }
@@ -213,7 +213,7 @@ class Scene extends React.Component {
       if (player_dummy.position.y > height){
         Composite.remove(engine.world, player_dummy)
 
-        if (this.Form.state.nickname != ""){
+        if (this.Form.state.nickname !== ""){
           this.setState({gameover_text: this.Form.state.nickname + ", your score is:"})
         }
 
@@ -224,7 +224,7 @@ class Scene extends React.Component {
         if (Query.collides(player_dummy, barriers[i]).length !== 0){
           Composite.remove(engine.world, player_dummy)
 
-          if (this.Form.state.nickname != ""){
+          if (this.Form.state.nickname !== ""){
             this.setState({gameover_text: this.Form.state.nickname + ", your score is:"})
           }
           
